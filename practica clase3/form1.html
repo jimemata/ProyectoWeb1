@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Desarrollo Web</title>
+<meta charset="UTF-8" />	
+<link href="imagenes/favicon.png" rel="icon"> 
+</head>
+<body>
+
+<header>
+    <h1>Formulario de contacto</h1>
+</header>
+<hr>
+
+<section>
+<!--creación del formulario-->
+<form method="post">
+    <!--escenario de controles con leyenda-->
+<fieldset>
+    <legend><h2>Información personal</h2></legend>
+    <br><br>
+    <!--etiqueta-->
+    <h3><label>Nombre:</label></h3>
+    <!--campo de entrada-->
+    <input name="nom" type="text" maxlength="15" size="30" placeholder="Escriba su nombre completo." required>
+
+    <br><br>
+    <h3><label>Apellidos:</label></h3>
+    <input name="ape" type="text" maxlength="15" size="30" placeholder="Escriba sus apellidos completos." required>
+
+    <br><br>
+    <h3><label>Correo:</label></h3>
+    <input name="cor" type="text" maxlength="15" size="30" placeholder="nombre@dominio.com." required>
+
+    <br><br>
+    <!--radio button-->
+    <h3>Escoja de esta lista su color preferido</h3>
+    <input type="radio" name="color" value="azul">Azul<br>
+    <input type="radio" name="color" value="blanco">Blanco<br>
+    <input type="radio" name="color" value="negro">Negro<br>
+
+    <br><br>
+    <h3><label>Mensaje:</label></h3>
+    <!--cuadro de comentario-->
+    <textarea name="com" rows="10" cols="50" placeholder="Escriba su mensaje." required></textarea>
+
+    <br><br><br>
+    <!--botones-->
+    <input name="enviar" type="submit" value="Enviar">
+    <input name="borrar" type="reset" value="Borrar">
+</fieldset>
+</form>
+</section>
+
+<br><br>
+
+<footer>
+    <h3>Es un gusto atenderle en cualquier momento...</h3>
+</footer>
+
+</body>
+</html>
