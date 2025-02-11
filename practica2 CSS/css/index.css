@@ -1,0 +1,78 @@
+
+/*selector universal de navegadores*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url("../imagenes/fondo.png");
+    background-attachment: fixed;
+}
+
+/*contenedor*/
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #e4e4e4;
+}
+
+header{
+    background-color: #016aea;
+}
+
+footer{
+    background-color: #016aea;
+}
+
+header h1{
+    padding: 70px 0px 70px 0px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+footer h2{
+    padding: 60px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    color: #016aea;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    color: #016aea;
+    /*margen izquierdo*/
+    margin: 50px;
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+    /*espacio entre líneas de manera vertical*/
+    line-height: 25px;
+    margin: 50px;
+    font-size: 17px;
+}
+
+/*cambiar el tamaño de una imagen*/
+.tam1 img{
+    width: 80%;
+}
+
+/*centra la imagen*/
+.centrado{
+    text-align: center;
+}
+
+.bajar1{
+    padding-bottom: 50px;
+}
