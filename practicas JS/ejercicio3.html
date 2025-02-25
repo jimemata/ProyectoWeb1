@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PROGRAMACION JS</title>
+    <meta charset="utf-8">    
+    <link href="imagenes/favicon.png" rel="icon">    
+</head>
+
+
+<body>
+
+    <section>
+        <h1>EJERCICIO #3</h1>
+        <p>Ver imágenes</p>
+        <button onclick="ver1()">Ver imagen1</button>
+        <button onclick="ver2()">Ver imagen2</button>
+        <button onclick="ocultar()">Ocultar</button>
+
+    <!--muestro la imagen del personaje-->
+    <div id="ima0" style="display: block">
+        <img src="imagenes/personaje.png" alt="personaje" style="padding-top:30px">
+    </div>
+
+    <!--oculto los 2 logos-->
+    <div id="ima1" style="display: none">
+        <img src="imagenes/logo1.png" alt="logo1" style="padding-top:30px">
+    </div>
+
+    <div id="ima2" style="display: none">
+        <img src="imagenes/logo2.png" alt="logo2" style="padding-top:30px">
+    </div>
+    </section>
+
+    <script>
+        function ver1(){
+            document.getElementById("ima1").style.display = 'block';
+            document.getElementById("ima2").style.display = 'none';
+            document.getElementById("ima0").style.display = 'none';
+        }
+    </script>
+
+<script>
+    function ver2(){
+        document.getElementById("ima1").style.display = 'none';
+        document.getElementById("ima2").style.display = 'block';
+        document.getElementById("ima0").style.display = 'none';
+    }
+</script>
+
+<script>
+    function ocultar(){
+        document.getElementById("ima1").style.display = 'none';
+        document.getElementById("ima2").style.display = 'none';
+        document.getElementById("ima0").style.display = 'none';
+    }
+</script>
+
+
+</body>
+</html>

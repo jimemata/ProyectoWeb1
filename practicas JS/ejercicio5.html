@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>PROGRAMACIÓN JS</title>
+    <meta charset="utf-8">    
+    <link href="imagenes/favicon.png" rel="icon"> 
+    <style>
+        body{
+            font-size: 20px;
+        }
+        .centrado{
+            text-align: center;
+        }
+    </style>   
+</head>
+
+<body>
+    <section class="centrado">
+        <br><br><br>
+        <h3>Selccione el botón:</h3>
+        <button onclick="borrar()">Borrar</button>
+        <button onclick="random()">Elegir</button>
+
+        <form name="resultado">
+            <br><br>
+            <h4>El número leatorio es:</h4>
+            <div class="centrado">
+                <h4>
+                    <!--readonly se usa para impedir que el usuario digite un numero en el campo INPUT-->
+                    <input type="text" name="rand" size="3" id="aleatorio" readonly>
+                </h4>
+            </div>
+        </form>
+        <img src="imagenes/aleatorio.jpg" alt="aleatorio" class="img-fluid">
+
+        <footer>
+            <!--linea horizontal-->
+            <hr><hr>
+            <h4>Programación en JavaScript</h4>
+        </footer>
+    </section>
+
+    <script>
+        //función  que carga números del 0 al 100 de manera aleatoria
+        function random(){
+            var numero = 0;
+            // función que permite sacar número aleatorios
+            numero = Math.random() * 100;
+            //tofixed es un método que convierte un número a una cadena sin decimales
+            document.resultado.rand.value = numero.toFixed(0);
+        }
+
+        function borrar(){
+            aleatorio.value = "";
+        }
+    </script>
+
+
+</body>
+</html>
