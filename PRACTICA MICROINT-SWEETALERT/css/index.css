@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    color:#000;
+    font-size: 30px;
+    font-weight: bolder;
+}
+button{
+    font-size: 20px;
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+.cursor {
+    cursor: pointer;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-size: 20px;
+}
+.bajar1{
+    padding-top: 30px;
+}
+.bajar2{
+    padding-top: 80px;
+}
+.tam1{
+    width:50%;
+    padding:50px;
+}
+.color{
+    color:#fff;
+}
+.fondo {
+    background-color: #006aea;
+}
+header {
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+footer {
+    /*si se quita la posicion fija el pie de pagina dejara de estar al final de la pagina*/
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+

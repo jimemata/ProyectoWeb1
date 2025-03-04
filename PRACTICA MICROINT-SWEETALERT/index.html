@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="imagenes/favicon.png" rel="icon">        
+    <link href="css/index.css" rel="stylesheet">
+    <!-- libreria de animacion -->
+    <link href="css/animate.css" rel="stylesheet">
+    <title>CENFOTEC-PROFEFRANK</title>
+</head>
+
+<body>
+    <header class="fondo">        
+        <h1 class="centrado color">U.Cenfotec</h1>
+    </header>
+
+
+    <section>
+        <div class="bajar2"></div>
+        <h2 class="centrado bajar2">Información General</h2>
+        <div class="bajar2 centrado">
+        
+        <!-- DESPLEGABLES -->
+        <button id="r0">Mensaje0</button>
+        <button id="r1">Mensaje1</button>
+        <button id="r2">Mensaje2</button>
+        <button id="r3">Mensaje3</button>
+        <button id="r4">Mensaje4</button>
+        <button id="r5">Mensaje5</button>
+
+
+        </div>
+        
+        <!-- MICROINTERACCIONES --> 
+
+        <!-- hover es para que el usuario observe la animación pasando el mouse -->
+        <!-- style es para cambiar tamaño del objeto dentro de la web. Se pueden utilizar Medias Querys -->
+        <!-- controls es para activar un player de control basico -->
+        <!-- loop es para que la animación tenga un ciclo -->
+
+        <!--carga animación1 json -->
+        <div class="centrado">
+            <lottie-player src="https://lottie.host/b12ad70c-d746-492c-934c-a722e37c5f25/DVuehQ5KwI.json" autoplay loop class="tam1 centrado">
+            </lottie-player>            
+             
+        </div>
+
+        <!--carga animación2 json -->
+        <div class="centrado">
+            <lottie-player src="https://lottie.host/bb1917db-cc24-4887-9a88-8a9bfde8c323/L0EcXJhiV3.json" autoplay loop class="tam1 centrado">
+            </lottie-player> 
+        </div>
+
+        <!--carga animación3 json -->
+        <div class="centrado">
+            <lottie-player src="https://lottie.host/348e921e-73fb-4041-9145-2ed03da82780/XJPohQGSip.json" autoplay loop class="tam1 centrado">
+            </lottie-player> 
+        </div> 
+        
+    </section>
+   
+
+    <footer class="fondo">
+        <h2 class="centrado color">Derechos Reservados</h2>
+    </footer>
+
+
+    <!-- liberia JQUERY (desplegables)-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- libreria animacion web JSON -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+   <!-- libreria Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- desplegables Sweet Alert -->
+     <script src="js/desplegables.js"></script>
+
+</body>
+</html>
