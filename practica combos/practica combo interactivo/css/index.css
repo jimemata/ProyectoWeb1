@@ -1,0 +1,32 @@
+body {
+    font-size: 20px;
+}
+
+.logo {
+    max-width: 100px;
+    margin-right: 100px;
+}
+
+.centrado{
+    text-align: center;    
+}
+
+.bajar1{
+    padding: 30px;
+}
+
+
+.enc {
+    background-color: rgb(206, 212, 214);
+    padding-right: 900px;
+}
+
+.formato1 {
+    font-size: 18px;
+}
+
+
+.text1 {
+    padding-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>CENFOTEC-PROFEFRANK</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/musica.css">
+</head>
+
+<body>
+    <header class="centrado">
+        <h1>Concierto El General</h1>        
+        <p>¿Te vas a perder de este espectaculo?</p>        
+    </header>
+
+    <section class="centrado bajar1">
+        
+                   
+                        <p>Calcular el precio de las entradas al concierto.</p>
+                        <div class="imagen">
+                            <img src="imagenes/concierto.jpg" alt="Concierto musical">
+                        </div>
+                                
+                    <form>
+                        
+                            <label for="dia">Seleccione el día:</label>
+
+                            <!-- combo1 -->
+                            <select name="dia" id="dia" class="input">
+                                <option>Seleccione el dia</option>
+                                <option>1</option>
+                                <option>2</option>                             
+                            </select>                        
+
+
+                        <div class="bajar1">
+                            <label for="txtCantDias">Total de entradas:</label>
+                            <input type="number" id="cantidad" min="0" class="input">
+                        </div>
+                        <div class="bajar1">
+                            <label for="tipoEntrada">Tipo de entrada:</label>
+
+                            <!-- combo2  -->
+                            <select name="tipoEntrada" id="tipoEntrada" class="input">
+                                <option>Seleccione su preferencia</option>
+                                <option>Graderia sur</option>
+                                <option>Gramilla</option>
+                                <option>Balcon premium</option>
+                                <option>Platea este</option>
+                                <option>Super VIP</option>
+                            </select>
+                        </div>
+
+                        <!-- botones  -->
+                        <div class="bajar1">
+                            <input type="button" value="Calcular" class="input2" onclick="pago()">
+                            <input type="button" value="Limpiar" onclick="btnLimpiar()" class="input2">
+                        </div>
+                    </form>
+                    
+
+                    <!-- resultado -->
+
+                    <div class="eleccion">
+                        <h4>Resultado:</h4>                        
+                        Dia: 
+                            <h5 id="diaE"> </h5>                                                
+                        Entradas:
+                            <h5 id="cant"> </h5>                        
+                        Tipo:
+                            <h5 id="tipoE"> </h5>                        
+                    </div>
+                        <div class="bajar1">
+                            <p class="negrita txttotal">Total:<output id="txtResultadoMontoFinal"></output></p>
+                        </div>
+                        <div class="bajar1"></div>
+    </section>
+
+
+    <footer>
+        <h2 class="centrado">Derechos reservados </h2>
+    </footer>
+
+    
+    <!-- programacion -->
+    <script src="js/musica.js"></script>
+
+    <!--Libreria de la nueva alerta-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>

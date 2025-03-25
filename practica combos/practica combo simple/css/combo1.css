@@ -1,0 +1,46 @@
+header {
+  background-color: #781e38;
+}
+
+p{
+  font-size: 20px;
+}
+
+select{
+    font-size: 24px;
+    color:#fff;
+    background-color: #781e38;
+}
+
+option{
+  color:#fff;  
+  font-size: 16px;
+}
+
+.bajar1{
+    padding-top: 30px;
+}
+
+header img {
+  width: 80px;
+}
+
+.color1{
+  color:#fff;
+}
+
+input, select {
+  cursor: pointer;
+}
+
+.error {
+  border: red solid 1px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+#output-txt{
+  font-size: 20px;
+}

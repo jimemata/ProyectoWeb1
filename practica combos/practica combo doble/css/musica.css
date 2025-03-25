@@ -1,0 +1,102 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.centrado{
+    text-align: center;    
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 22px;    
+}
+
+.bajar1{
+    padding-top: 30px;
+}
+
+form {
+    margin-top: 80px;
+}
+
+label {    
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.imagen {
+    padding: 30px;
+    text-align: center;
+}
+
+.imagen img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+
+select{
+    font-size: 18px;
+    border: blue 2px solid;
+}
+
+input { 
+    border: blue 2px solid;
+    font-size: 16px;
+}
+
+.input2 {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 11px;
+    margin-bottom: 10px;
+}
+
+header {
+    padding: 20px;
+    background-color: blue;
+    color: #fff;
+}
+
+footer {
+    color: #fff;
+
+    background-color: blue;
+    padding: 20px;    
+}
+
+h4 {
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.eleccion {
+    margin-left: 30px;
+}
+
+
+/*permite desplegar el resultado en linea */
+
+.eleccion h5 {
+    display: inline-block;
+    font-size: 20px;
+}
+
+#txtResultadoMontoFinal {
+    font-size: 24px;
+}
+
+.txttotal {
+    font-size: 24px;
+    font-weight: bolder;
+}
