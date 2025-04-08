@@ -1,0 +1,92 @@
+
+
+.centrado{
+    text-align: center;
+}
+
+
+.alertaRoja {
+    color: #ff0000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.alertaVerde {
+    color: #2d572c;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+label {
+    color:#000;
+    margin-top:20px;
+	margin-left:50px;
+    letter-spacing:1px;
+    font-size:20px;
+}
+
+
+/* Parte principal del form (atras) */
+.principal {
+    display:block;
+    margin:0 auto;
+    width:600px;
+    left:600px;
+    color: #ccc;
+    font-family:Arial;
+    font-size:24px;
+}
+
+
+/* Propiedades Formulario */
+form {
+    margin:0 auto;
+    width:530px;
+    height: 950px;
+    font-size:18px;
+    color:#000000;
+    border:solid 5px #c3c2c2;
+   	background-color:#eee;
+    border-radius: 10px;
+}
+
+
+/* Para agregar un borde cuando se activan los campos */
+input:hover {
+    outline: 3px solid #e23636;
+}
+textarea:hover {
+    outline: 3px solid #e23636;
+}
+
+
+/* Propiedades de los campos */
+input, textarea {
+    color:#000000;
+    width:400px;
+    height:27px;
+    background:#eee;
+    border:2px solid #3ca5c7;
+    padding:10px;
+	margin-left: 50px;
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Propiedad Campo TextArea */
+textarea {
+    resize: none;    
+    height: 100px;
+}
+
+/* Propiedades de los botones */
+.enviar {
+	display: block;
+	height: 50px;
+    color:#fff;
+	font-size: 26px;
+    cursor:pointer;
+    background-color:#e23636;
+}
+

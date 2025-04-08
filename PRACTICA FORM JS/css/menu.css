@@ -1,0 +1,67 @@
+nav {
+    /*tamaño del menu ancho y alto*/
+    width: 615px;
+    height: 30px;
+    /*centrado del menu*/
+    margin: 0 auto;
+    /*transicion en las opcione del menu*/
+    transition: all 0.3s ease-in-out;
+}
+
+ul {
+    /*desactiva las viñetas que salen por el uso de UL*/
+    list-style: none;
+}
+
+
+/*permite poner los estilos del id llamado menu del HTML*/
+
+#menu {
+    position: absolute;
+    z-index: 100;
+}
+
+
+/*se refiere a las opciones de lista con <a href>*/
+
+#menu li>a {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    /*desactiva el subruyado de los enlaces*/
+    text-decoration: none;
+    min-width: 100px;
+}
+
+
+/*se refiere a las opciones de lista con <a href> al pasar el mouse sobre las opciones*/
+
+#menu li>a:hover {
+    color: #000;
+    background-color: #eaeaea;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*opciones de lista de todo el menu*/
+
+#menu>li {
+    /*flota todo el menu a la izquierda */
+    float: left;
+    /*permite centrar las opciones*/
+    text-align: center;
+}
+
+
+/*permiten ocultar las opciones del menu*/
+
+#menu>li>ul {
+    display: none;
+}
+
+#menu>li:hover>ul {
+    /*cuando se pasa el mouse en las opciones se muestra en bloque*/
+    display: block;
+}

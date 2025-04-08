@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Web-ProfeFrank</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+
+<body>
+    <section class="contenedor">
+
+
+        <header class="centrado">
+            <h1 class="titulo1">DESARROLLO WEB</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html" title="Ir al homepage">Inicio</a></li>
+                    <li><a href="nosotros.html" title="Descripción de la empresa">Nosotros</a></li>
+                    <!-- SUBMENU CAPACITACION -->
+                    <li><a href="capacitacion.html" title="Carreras técnicas">Capacitación</a>
+                        <ul>
+                            <li><a href="grafico.html">Gráfico</a></li>
+                            <li><a href="web.html">Web</a></li>
+                        </ul>
+                    </li>
+                    <!-- SUBMENU EXTRAS -->
+                    <li><a href="extras.html" title="Ventajas del estudiante">Extras</a>
+                        <ul>
+                            <li><a href="alumno.html" title="servicio de alumno">Alumno</a></li>
+                            <li><a href="biblioteca.html" title="biblioteca">Biblioteca</a></li>
+                            <li><a href="soda.html" title="soda">Soda</a></li>
+                            <li><a href="laboratorio.html" title="laboratorio">Laboratorio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html" style="background-color: #3ca5c7" title="Descripción de la empresa">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section>
+            <h2 class="centrado" style="padding: 70px">Formulario de contacto</h2>
+        </section>
+
+
+
+        <section class="principal">
+            <form method="post" id="form1">
+                <br><br>
+                <label for="nombre">Nombre:</label>
+                <input id="nombreTxt" name="nombre" type="text" placeholder="Escriba su nombre completo" required />
+                <br><br>
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidoTxt" name="apellidos" type="text" placeholder="Escriba sus apellidos completos" required/>
+                <br><br>        
+                <label for="correo">Email:</label>
+                <input id="emailTxt" name="correo" type="email" placeholder="Formato del email: nombre@dominio.com" required/>
+                <br><br>
+                <label for="telefono">Teléfono:</label>
+                <input id="numberTxt" name="telefono" type="text" placeholder="Escriba su celular" required/>
+                <br><br>        
+                <label for="comentarios">Mensaje:</label>
+                <textarea id="mensajeTxt" name="comentarios" placeholder="Escriba su mensaje" rows="10" cols="10" required></textarea>
+                
+                <!-- resultado del mensaje enviado JS -->
+                <p class="centrado" id="mensajeAlert"></p>
+                <input type="submit" value="Enviar" class="enviar" id="btnSend">
+                        
+            
+            </form>
+        </section>
+
+
+        <footer>
+            <h2>DERECHOS RESERVADOS</h2>
+            <div class="centrado">
+                <div class="espacio">
+                    <a href="http://www.facebook.com" target="blank">
+                        <i class="uil uil-facebook" style="color:#fff;font-size: 45px"></i>
+                    </a>
+                </div>
+                <div class="espacio">
+                    <a href="http://www.twitter.com" target="blank">
+                        <i class="uil uil-twitter" style="color:#fff;font-size: 45px"></i>
+                    </a>
+                </div>
+                <div class="espacio">
+                    <a href="http://www.youtube.com" target="blank">
+                        <i class="uil uil-youtube" style="color:#fff;font-size: 45px"></i>
+                    </a>
+                </div>
+                <br><br>
+            </div>
+        </footer>
+
+    </section>
+   
+   <!-- LIBRERIA EMAIL.JS -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   
+
+   <!-- PROGRAMACION FORM JS -->
+   <script src="js/contacto.js"></script>
+
+
+</body>
+</html>
