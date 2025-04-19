@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Veterinaria Bovina</title>
+    <meta charset="utf-8">
+    <link href="imagenes/favicon.ico" rel="icon">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/fonts.css" rel="stylesheet">     
+    <link href="css/index.css" rel="stylesheet"> 
+    <link href="css/lightbox2.css" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head> 
+
+<body>
+    <header class="">
+        <!--video mp4-->
+        <div class="configvideo">
+            <video height="550" width="100%" autoplay="" loop="" muted="muted">
+                <source src="videos/video6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </header>
+    <nav>
+        <div class="botonera">
+            <ul class="menu">
+                <li><a class="botones" href="inicio.html" target="_blank">Inicio</a></li>
+                <li><a class="botones" href="servicios.html" target="_blank">Servicios</a></li>
+                <li><a class="botones" href="farmacia.html" target="_blank">Farmacia</a></li>
+                <li><a class="botones" href="nuestro_equipo.html" target="_blank">Nuestro Equipo</a></li>
+                <li><a class="botones" href="encuesta.html" target="_blank">Encuesta</a></li>
+                <li><a class="botones" href="ubicacion.html" target="_blank">Ubicación</a></li>
+                <li><a class="botones" href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <h3 class="centrado bajar2">INFORMACIÓN GENERAL</h3>
+        <p class="margen">
+            En Veterinaria Bovina, somos especialistas en el cuidado y la salud del ganado bovino. Ofrecemos una amplia gama de servicios veterinarios diseñados para garantizar el bienestar y la productividad de su hato.
+            <br>
+            <br>
+
+            Nuestros servicios incluyen:
+                <div class="lista">
+                    <ul>
+                    <li>✅ Atención veterinaria especializada: Diagnóstico, tratamiento y prevención de enfermedades bovinas.</li>
+                    <br>
+                    <li>✅ Farmacia veterinaria: Medicamentos, suplementos y productos de calidad para el cuidado de tu ganado.</li>
+                    <br>
+                    <li>✅ Asesoría en manejo y producción: Optimización de alimentación, reproducción y sanidad.</li>
+                    <br>
+                    <li>✅ Urgencias veterinarias: Atención rápida y eficaz para emergencias en campo.</li>
+                    <br>
+                    <li>✅ Vacunación y desparasitación: Protocolos de salud para mantener un hato fuerte y productivo.</li>
+                    </ul>
+                </div>
+
+            <p class="margen">Con un equipo de veterinarios altamente capacitados y tecnología de vanguardia, en Veterinaria Bovina trabajamos para brindar soluciones efectivas y mejorar la rentabilidad de tu producción ganadera.</p>
+        </p>
+    </section>
+
+<!-- boton para activar el lightbox de vídeo -->
+                    <!-- permite cargar la funcion ejecutar JS -->
+                    <div class="boton-centro">
+                        <button id="boton" onclick="ejecutar('video','youtube')" class="cursor">Video Informativo - Hormonas de reproducción de las vacas</button>
+                    </div>                    
+                    <!-- permite cargar la funcion ocultar JS -->
+                    <div id="video" class="lightbox" onclick="ocultar('video','youtube')">
+                        <!-- permite poner el tamaño del contenedor del lightbox -->
+                        <div class="lightbox-container">
+                            <!-- permite poner transparente la pantalla -->
+                            <div class="lightbox-content">
+                                <button onclick="ocultar('video','youtube')" class="lightbox-close cursor">
+                            ✕
+                        </button>
+                                <!-- permite poner el vídeo responsivo -->
+                                <div class="video-container">
+                                    <!-- agregar la terminacion ?showinfo=0 para ocultar los vídeos promocionales al final  -->
+                                    <!-- si se activa no funciona los controles del video youtube accelerometer;   -->
+                                    <iframe id="youtube" width="960" height="540" data-src="https://www.youtube.com/embed/EFbP3xbvSUE?si=SIXXT_drPUk0x35S" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    <section class="centrado bajar2">
+        <h3 class="centrado">MISIÓN Y VISIÓN</h3>
+        <div class="contenedor">
+            <div class="caja">
+                <h2 class="hcaja">Misión</h2>
+                <p>Brindar servicios veterinarios de alta calidad para el bienestar y productividad del ganado bovino.</p>
+            </div>
+            <div class="caja">
+                <h2 class="hcaja">Visión</h2>
+                <p>Ser la veterinaria de referencia en el sector ganadero, destacando por nuestro compromiso y excelencia.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+
+    <div class="bajar2"></div>
+
+    <nav class="inicio">
+            <ul>
+                <li><a href="index.html" target="_blank">Index</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="landing.html" target="_blank">Landing</a></li>
+                <li><a href="aplicacion.html" target="_blank">Tour 360°</a></li>
+            </ul>
+    </nav>
+
+    <footer>
+        Derechos reservados 2025
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL " crossorigin="anonymous "></script>
+
+    <script src="js/lightbox2.js "></script>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Veterinaria Bovina</title>
+    <meta charset="utf-8">
+    <link href="imagenes/favicon.ico" rel="icon">
+    <link href="css/fonts.css" rel="stylesheet">       
+    <link href="css/index.css" rel="stylesheet">   
+    <link href="css/servicios.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head> 
+
+<body>
+    <header class="">
+        <!--video mp4-->
+        <div class="configvideo">
+            <video height="550" width="100%" autoplay="" loop="" muted="muted">
+                <source src="videos/video6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </header>
+    <nav>
+        <div class="botonera">
+            <ul class="menu">
+                <li><a class="botones" href="inicio.html" target="_blank">Inicio</a></li>
+                <li><a class="botones" href="servicios.html" target="_blank">Servicios</a></li>
+                <li><a class="botones" href="farmacia.html" target="_blank">Farmacia</a></li>
+                <li><a class="botones" href="nuestro_equipo.html" target="_blank">Nuestro Equipo</a></li>
+                <li><a class="botones" href="encuesta.html" target="_blank">Encuesta</a></li>
+                <li><a class="botones" href="ubicacion.html" target="_blank">Ubicación</a></li>
+                <li><a class="botones" href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <h3 class="centrado bajar2">SERVICIOS DE LA VETERINARIA BOVINA</h3>
+        <p class="margen">
+            En Veterinaria Bovina ofrecemos una amplia gama de servicios especializados para garantizar la salud, bienestar y productividad de su ganado. Nuestro equipo de veterinarios altamente capacitados utiliza tecnología de vanguardia y métodos probados para brindar la mejor atención.
+        </p>
+        
+        <!-- Combo Simple -->
+        <div class="combo-container">
+            <h4 class="centrado">Seleccione un servicio para más información</h4>
+            <div class="combo-wrapper">
+                <select id="comboServicio" class="combo-select">
+                    <option value="default">-- Seleccione un servicio --</option>
+                    <option value="consulta">Consulta Veterinaria</option>
+                    <option value="cirugia">Cirugía Bovina</option>
+                    <option value="reproduccion">Servicios Reproductivos</option>
+                    <option value="nutricional">Asesoría Nutricional</option>
+                    <option value="preventiva">Medicina Preventiva</option>
+                </select>
+            </div>
+            <div class="descripcion-container">
+                <p id="descripcionServicio" class="descripcion-texto">Seleccione un servicio para ver su descripción detallada.</p>
+            </div>
+        </div>
+        
+        <!-- Servicios Principales -->
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <h4>Atención Clínica</h4>
+                <p>Diagnóstico y tratamiento de enfermedades comunes y complejas en bovinos. Nuestros veterinarios cuentan con amplia experiencia en manejo de problemas respiratorios, digestivos, metabólicos y más.</p>
+            </div>
+            <div class="servicio-card">
+                <h4>Cirugías</h4>
+                <p>Realizamos procedimientos quirúrgicos de rutina y emergencia, desde cesáreas hasta correcciones de desplazamiento de abomaso, con las técnicas más avanzadas y seguras.</p>
+            </div>
+            <div class="servicio-card">
+                <h4>Reproducción Bovina</h4>
+                <p>Ofrecemos servicios completos de reproducción, incluyendo inseminación artificial, diagnóstico de gestación, evaluación de fertilidad y asesoramiento en programas reproductivos.</p>
+            </div>
+            <div class="servicio-card">
+                <h4>Nutrición</h4>
+                <p>Desarrollamos planes de alimentación personalizados para optimizar la salud y productividad de su ganado, con evaluación constante y ajustes según necesidades específicas.</p>
+            </div>
+        </div>
+        
+        <!-- Combo Interactivo -->
+        <h3 class="centrado bajar2">CALCULADORA DE COSTOS VETERINARIOS</h3>
+        <p class="margen">Utilice nuestra herramienta interactiva para calcular el costo aproximado de nuestros servicios basado en el tipo de servicio y el número de animales.</p>
+        
+        <div class="interactive-container">
+            <div class="input-group">
+                <label for="servicioCalc">Servicio:</label>
+                <select id="servicioCalc" class="calc-select">
+                    <option value="consulta">Consulta Regular</option>
+                    <option value="emergencia">Atención de Emergencia</option>
+                    <option value="vacunacion">Vacunación</option>
+                    <option value="desparasitacion">Desparasitación</option>
+                    <option value="cirugia">Cirugía</option>
+                </select>
+            </div>
+            
+            <div class="input-group">
+                <label for="cantidadAnimales">Cantidad de animales:</label>
+                <input type="number" id="cantidadAnimales" min="1" value="1" class="calc-input">
+            </div>
+            
+            <div class="input-group">
+                <button id="calcularBtn" class="calc-button">Calcular Costo</button>
+            </div>
+            
+            <div class="resultado-container">
+                <h4>Costo Estimado:</h4>
+                <p id="costoEstimado" class="costo-texto">₡0</p>
+                <p id="detalleServicio" class="detalle-texto"></p>
+            </div>
+        </div>
+    </section>
+
+    <nav class="inicio">
+            <ul>
+                <li><a href="index.html" target="_blank">Index</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="landing.html" target="_blank">Landing</a></li>
+                <li><a href="aplicacion.html" target="_blank">Tour 360°</a></li>
+            </ul>
+    </nav>
+
+    <footer>
+        Derechos reservados 2025
+    </footer>
+
+    <script src="js/combo-simple.js"></script>
+    <script src="js/combo-interactivo.js"></script>
+</body>
+</html>
