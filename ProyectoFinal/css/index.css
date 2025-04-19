@@ -1,0 +1,355 @@
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+padding: 0px;
+margin:0px;
+}
+
+.bannerweb{
+background-image: url("../videos/video1.mp4");    
+background-position: center;   
+/*altura total vertical*/ 
+height: 100vh;
+/*profundidad*/ 
+box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.678);
+background-color:rgba(26, 6, 6, 0.486);
+background-blend-mode: multiply; 
+}
+
+.centrado{
+text-align: center;
+}
+
+.bajar1{
+padding-top: 150px;
+}
+.bajar2{
+padding-top: 50px;
+}
+
+
+h1{
+color:#fff;    
+font-size: 70px;
+}
+h2{
+color:#fff;
+font-size: 50px;
+}
+h3{
+color:#000;
+font-size: 40px;
+}
+.color1{
+color:#fff;
+}
+p{
+font-size: 20px;
+/*superior/inferior  izq-dere*/
+margin:40px 100px;
+text-align: justify;
+}
+
+
+/*botones*/
+.botones {
+width: 150px;
+height: 30px;
+border: 3px solid #253dc5;
+cursor: pointer;
+color: #fff;
+background-color: #3b5eb6d4;
+font-family: Arial;
+font-size: 20px;
+font-weight: bold;
+/*espaciado*/
+padding: 6px 35px;
+/*quita subrayado*/
+text-decoration: none;
+text-align: center;
+text-shadow: 0px 1px 0px #1570cd;
+transition: all linear 0.2s;
+/*forma del boton redondeado*/
+border-radius: 15px;
+}
+
+.botones:hover {
+width: 150px;
+height: 30px;
+background-color: #2457d7d4;
+color: #efefef;
+text-decoration: none;
+font-size: 20px;
+transition: all linear 0.2s;
+}
+
+
+label{
+font-size: 24px;   
+float: left;
+}
+/*controles input*/
+.form-control{
+font-size: 20px;   
+}
+
+footer{    
+background-color: #3b5eb6d4;
+padding:20px 20px;
+color: white;
+text-align: center;
+font-size: 17px;
+font-weight: bold;
+font-style: italic;
+}
+
+
+.formatospie{
+color:#fff;
+font-size: 24px;
+}
+
+/*lo pone a todo lo ancho y de fondo */
+video{
+    object-fit: cover;   
+}
+
+.bannerweb {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.configvideo{
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.centrado {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+.caja {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border-top: 5px solid #3b5eb6d4; /* Azul fuerte */
+}
+h2 {
+    color: #dfdfdf;
+}
+
+.botonera {
+    display: flex;      /* Coloca los botones en línea */
+    justify-content: center; /* Centra los botones */
+    gap: 15px;         /* Espacio entre los botones */
+    margin-top: 50px;  /* Espacio superior */
+}
+
+.rrss {
+    width: 40px;
+    height: 40px;
+    padding-top: 450px;
+  }
+
+.lista{
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  /* Estilo para los enlaces */
+  .menu a {
+    text-decoration: none; 
+    color: #ffffff; /* Color del texto */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 15px; 
+    transition: 0.3s ease;
+  }
+  
+  /* Cambio de color al pasar el mouse */
+  .menu a:hover {
+    background-color: #253dc5; 
+    color: white; 
+  }
+
+.hcaja{
+    color: #3b5eb6d4;
+}
+
+.inicio{
+    background-color: #3b5eb6d4;
+    padding: 15px 0;
+  }
+  
+.inicio ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+  
+.inicio ul li {
+    margin: 0;
+
+  }
+  
+.inicio ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  
+.inicio ul li a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #eef5f7;
+  }
+
+
+.imagen_centrado{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px; 
+  height: auto;
+}
+
+/* Para el contenedor de las cajas */
+.contenedor.cajas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch; /* Fuerza que todas tengan misma altura */
+  flex-wrap: wrap; /* Para que se adapten en pantallas pequeñas */
+}
+
+/* Para cada caja */
+.caja2 {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-top: 5px solid #3b5eb6d4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: -10px; 
+}
+.imagen_centrado {
+  width: 500px; 
+  height: auto; 
+}
+
+/* Estilos para la página de ubicación */
+
+/* Contenedor principal que mantiene las dos secciones horizontalmente */
+.ubicacion-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Estilo para cada caja/sección */
+.ubicacion-box {
+  width: 45%; /* Ancho fijo para cada caja */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #3b5eb6d4;
+}
+
+/* Título de cada caja */
+.box-title {
+  color: #3b5eb6d4;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Imagen de la clínica */
+.imagen-box {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Mapa de Google */
+.mapa-box {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
